@@ -77,7 +77,7 @@ function Signup() {
               });
               
             }
-        const api_url = `http://localhost:8000/api/v1/customer/createCustomer`;
+        const api_url = `https://carvist.onrender.com/api/v1/customer/createCustomer`;
         axios
           .post(api_url, {
             firstName: firstName,

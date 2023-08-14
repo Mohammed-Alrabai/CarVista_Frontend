@@ -12,11 +12,11 @@ function Checkout() {
 
   const { id } = useParams();
   useEffect(() => {
-    const api_url = `http://localhost:8000/api/v1/customer/rentalCar/${id}`;
+    const api_url = `https://carvist.onrender.com/api/v1/customer/rentalCar/${id}`;
     const fetchData = async () => {
       const res = await axios.get(api_url);
       const carRes = await axios.get(
-        `http://localhost:8000/api/v1/admin/car/${res.data.data.Car}`
+        `https://carvist.onrender.com/api/v1/admin/car/${res.data.data.Car}`
       );
       setData(res.data.data);
       setCarData(carRes.data.data);

@@ -48,7 +48,7 @@ function SpecialOffers() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const api_url = `http://localhost:8000/api/v1/admin/carsPagination?page=${pagination}`;
+    const api_url = `https://carvist.onrender.com/api/v1/admin/carsPagination?page=${pagination}`;
     axios
       .get(api_url)
       .then((res) => {

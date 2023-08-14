@@ -45,7 +45,7 @@ function Profile() {
   useEffect(() => {
     const fetchData = async () => {
       const res = await axios.get(
-        `http://localhost:8000/api/v1/customer/customer/${id}`
+        `https://carvist.onrender.com/api/v1/customer/customer/${id}`
       );
       setData({
         ...res.data.data,
@@ -61,7 +61,7 @@ function Profile() {
   };
 
   const handelEdit = async () => {
-    const url = `http://localhost:8000/api/v1/customer/updateCustomer/${id}`;
+    const url = `https://carvist.onrender.com/api/v1/customer/updateCustomer/${id}`;
     try {
       const res = await axios.put(
         url,
@@ -101,7 +101,7 @@ function Profile() {
 
   const handelDelete = async () => {
     const { _id } = data;
-    const url = `http://localhost:8000/api/v1/customer/deleteCustomer/${_id}`;
+    const url = `https://carvist.onrender.com/api/v1/customer/deleteCustomer/${_id}`;
     try {
       const res = await axios.delete(url, {
         headers: {

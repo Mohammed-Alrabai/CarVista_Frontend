@@ -30,7 +30,7 @@ function Transaction() {
   const cookies = new Cookies();
   const { id } = useParams();
   useEffect(() => {
-    const api_url = `http://localhost:8000/api/v1/customer/transaction/${id}`;
+    const api_url = `https://carvist.onrender.com/api/v1/customer/transaction/${id}`;
     axios
       .get(api_url, {
         headers: {

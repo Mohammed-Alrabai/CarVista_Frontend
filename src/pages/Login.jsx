@@ -41,7 +41,7 @@ function Login() {
         isClosable: true,
       });
     }
-    const api_url = `http://localhost:8000/api/v1/customer/loginCustomer`;
+    const api_url = `https://carvist.onrender.com/api/v1/customer/loginCustomer`;
     axios
       .post(api_url, {
         email: email,

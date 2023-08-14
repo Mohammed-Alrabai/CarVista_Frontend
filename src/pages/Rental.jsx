@@ -41,7 +41,7 @@ function Rental() {
 
   const { id } = useParams();
   useEffect(() => {
-    const api_url = `http://localhost:8000/api/v1/admin/car/${id}`;
+    const api_url = `https://carvist.onrender.com/api/v1/admin/car/${id}`;
     axios
       .get(api_url)
       .then((res) => {
@@ -83,7 +83,7 @@ function Rental() {
         })
       )
     } else {
-      const api_url = `http://localhost:8000/api/v1/customer/rentalCar/${id}`;
+      const api_url = `https://carvist.onrender.com/api/v1/customer/rentalCar/${id}`;
       const payment = true;
       axios
         .post(api_url, {
