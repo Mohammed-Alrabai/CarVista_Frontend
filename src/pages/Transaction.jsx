@@ -66,6 +66,7 @@ function Transaction() {
           style={{
             marginBottom: "20px",
             fontSize: "24px",
+            textAlign: "center",
           }}>
           Thank you for your reservation
         </Text>
@@ -73,6 +74,7 @@ function Transaction() {
           style={{
             marginBottom: "20px",
             fontSize: "24px",
+            textAlign: "center",
           }}>
           You can download your transaction details
         </Text>
